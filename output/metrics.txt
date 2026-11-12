@@ -1,0 +1,4 @@
+auc: 0.6525
+brier: 0.0484
+test_rows: 1250
+observed_default_rate: 0.0520
