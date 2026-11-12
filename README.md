@@ -2,6 +2,14 @@
 
 A Python and SQLite example of a basic underwriting analysis. It makes up a portfolio of 5,000 renters, queries it with SQL, and fits a calibrated logistic regression to estimate a made-up 12-month default outcome. No real renter records are used.
 
+## What decision this supports
+
+Whether to approve a renter, and at what risk. This project estimates the probability of default within 12 months, then tests approval thresholds so the tradeoff is visible: a higher threshold approves more applications and accepts more defaults. The deliverables are a calibrated risk score, a calibration check, and an approval tradeoff table an operator can act on.
+
+The loop: define the decision, establish a baseline, fit a calibrated model, and measure ranking quality and calibration on held-out rows before reporting anything. The skills it shows are SQL portfolio analysis, logistic regression, calibration, and threshold analysis.
+
+This is a methodological prototype built on synthetic data. It shows pipeline design, calibration, and evaluation discipline. It is not validation on real renter data and says nothing about real-world accuracy.
+
 ## How to run
 
 Python 3.10 or later.
